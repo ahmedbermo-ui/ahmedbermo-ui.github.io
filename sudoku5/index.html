@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sudoku Book &amp; Game – Offline Sudoku with Large Print &amp; a Daily Puzzle</title>
+<meta name="description" content="A free Sudoku game for Android that plays like a puzzle book: 300 offline puzzles from beginner to expert, a new daily Sudoku, large print and hints that teach.">
+<link rel="canonical" href="https://ahmedbermo-ui.github.io/sudoku5/">
+<meta name="theme-color" content="#1d3a66">
+<link rel="icon" href="icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sudoku Book &amp; Game">
+<meta property="og:title" content="Sudoku Book &amp; Game – Offline Sudoku for Android">
+<meta property="og:description" content="Play Sudoku like a real puzzle book: offline, large print, a daily puzzle and hints that teach.">
+<meta property="og:url" content="https://ahmedbermo-ui.github.io/sudoku5/">
+<meta property="og:image" content="https://ahmedbermo-ui.github.io/sudoku5/feature_graphic.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Sudoku Book & Game – Offline",
+  "operatingSystem": "Android",
+  "applicationCategory": "GameApplication",
+  "applicationSubCategory": "Puzzle",
+  "description": "A Sudoku game that plays like a puzzle book: 300 offline puzzles from beginner to expert and Sudoku-X, a new daily Sudoku, large print and hints that teach real techniques.",
+  "url": "https://ahmedbermo-ui.github.io/sudoku5/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.sudoku5.sudoku5_app",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.sudoku5.sudoku5_app",
+  "image": "https://ahmedbermo-ui.github.io/sudoku5/feature_graphic.png",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Person", "name": "Ahmed Bermo" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Does Sudoku Book work offline?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every puzzle, including a year of daily puzzles, is stored in the app. You can play with no internet connection." } },
+    { "@type": "Question", "name": "Is there a large print mode?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Large print makes the numbers bigger and the lines bolder, and shows pencil marks only on the cell you are working on. Text size and a reading-friendly font are in Settings too." } },
+    { "@type": "Question", "name": "How are the difficulty levels decided?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Each puzzle is solved by a built-in human-style solver. Its level comes from the hardest technique it needs, from singles for Beginner up to X-Wing and Swordfish for Expert, not from the number of clues." } },
+    { "@type": "Question", "name": "Do I need an account?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There is no sign-in. Your progress stays on your phone." } }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --paper: #f7f2e8; --card: #ffffff; --ink: #1f2430; --soft: #5b6170;
+    --accent: #1d3a66; --gold: #c9a24a; --line: #e4dccb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #16181d; --card: #20232a; --ink: #ece7dc; --soft: #a7a9b0;
+      --accent: #8fb0e8; --gold: #e2c478; --line: #2d3038;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 48px 0 24px; text-align: center; }
+  h1 { font: 700 clamp(30px, 6vw, 46px)/1.15 Georgia, "Times New Roman", serif; margin: 0 0 12px; }
+  .lead { font-size: 19px; color: var(--soft); max-width: 640px; margin: 0 auto 24px; }
+  .play img { height: 64px; }
+  img { max-width: 100%; }
+  .hero { width: 100%; height: auto; border-radius: 14px; margin: 16px 0 8px; box-shadow: 0 8px 30px rgb(0 0 0 / .15); }
+  h2 { font: 700 26px/1.25 Georgia, "Times New Roman", serif; margin: 48px 0 16px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--soft); font-size: 16px; }
+  .shot { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .shot img { width: 260px; max-width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); }
+  .shot div { flex: 1; min-width: 240px; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { font-weight: 600; cursor: pointer; }
+  details p { color: var(--soft); margin: 8px 0 0; }
+  footer { margin: 56px 0 32px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--soft); font-size: 15px; text-align: center; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>A Sudoku game that plays like a puzzle book</h1>
+  <p class="lead">300 offline Sudoku puzzles from beginner to expert, a new daily puzzle, large print, and hints that teach you real techniques. Free for Android.</p>
+  <a class="play" href="https://play.google.com/store/apps/details?id=com.sudoku5.sudoku5_app&amp;utm_source=website&amp;utm_medium=badge">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="216" height="64">
+  </a>
+  <img class="hero" src="feature_graphic.png" width="1024" height="500" alt="Sudoku Book &amp; Game showing a hint that explains why a number goes in a cell">
+</header>
+
+<main>
+<h2>A real puzzle book, on your phone</h2>
+<div class="grid">
+  <div class="card"><h3>Six books of puzzles</h3><p>Beginner, Easy, Medium, Hard, Expert and Sudoku-X (diagonal Sudoku) — 50 pages each, every one checked to have exactly one solution.</p></div>
+  <div class="card"><h3>A daily Sudoku</h3><p>A new free puzzle every day, gentle on Monday and tough on Sunday. No streaks: miss a day and it waits for you.</p></div>
+  <div class="card"><h3>Stamps for solved pages</h3><p>Each solved page gets a stamp with the date, your time and "no hints" when you did it alone.</p></div>
+  <div class="card"><h3>Honest difficulty</h3><p>A built-in solver rates every puzzle by the techniques it needs — not by counting clues.</p></div>
+</div>
+
+<h2>Hints that teach, not just tell</h2>
+<div class="shot">
+  <img src="hint_board.png" width="540" height="620" alt="A Sudoku board with one row highlighted by a hint" loading="lazy">
+  <div>
+    <p>Stuck? A hint first shows <strong>where</strong> to look, then <strong>which technique</strong> works there, then <strong>why</strong> — and gives the answer only if you ask. You'll learn hidden singles, naked pairs, pointing pairs, X-Wing and Swordfish along the way.</p>
+    <p><strong>Check my notes</strong> finds a pencil mark that removed a number you still need, and <strong>Rewind</strong> takes you back to the last moment your board was correct.</p>
+  </div>
+</div>
+
+<h2>Large print and easy on the eyes</h2>
+<div class="grid">
+  <div class="card"><h3>Large print mode</h3><p>Bigger numbers, bolder lines and notes only on the cell you're working on.</p></div>
+  <div class="card"><h3>Eleven looks</h3><p>From a classic newspaper page to a dark library, chalkboard and e-ink.</p></div>
+  <div class="card"><h3>Your kind of numbers</h3><p>Numbers, Roman numerals, letters, Arabic numerals, shapes or colours.</p></div>
+  <div class="card"><h3>Comfortable input</h3><p>Pencil marks that clean themselves, number-first input, drag to select, undo and redo.</p></div>
+</div>
+
+<h2>Offline and private</h2>
+<p>Every puzzle is stored in the app, so Sudoku Book works on a plane, on the train or anywhere without internet. There is no account and no sign-in; your progress stays on your phone and every move is saved the moment you make it. You can also print a puzzle, share it with a short code, or scan one from a newspaper with your camera.</p>
+
+<h2>Questions</h2>
+<details><summary>Does Sudoku Book work offline?</summary><p>Yes. Every puzzle, including a year of daily puzzles, is stored in the app. You can play with no internet connection.</p></details>
+<details><summary>Is there a large print mode?</summary><p>Yes. Large print makes the numbers bigger and the lines bolder, and shows pencil marks only on the cell you are working on. Text size and a reading-friendly font are in Settings too.</p></details>
+<details><summary>How are the difficulty levels decided?</summary><p>Each puzzle is solved by a built-in human-style solver. Its level comes from the hardest technique it needs, from singles for Beginner up to X-Wing and Swordfish for Expert, not from the number of clues.</p></details>
+<details><summary>Do I need an account?</summary><p>No. There is no sign-in. Your progress stays on your phone.</p></details>
+</main>
+
+<footer>
+  <p><a href="https://play.google.com/store/apps/details?id=com.sudoku5.sudoku5_app&amp;utm_source=website&amp;utm_medium=footer">Get Sudoku Book &amp; Game on Google Play</a> · <a href="privacy.html">Privacy policy</a></p>
+  <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
+</footer>
+
+</div>
+</body>
+</html>
