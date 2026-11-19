@@ -1,14 +1,20 @@
 ---
-title: Sudoku Book & Game privacy policy
+title: Sudoku Large Print – Offline privacy policy
 ---
 
-# Sudoku Book & Game privacy policy
+# Sudoku Large Print – Offline privacy policy
 
-Last updated: 20 October 2026
+Last updated: 19 November 2026
+
+- **App:** Sudoku Large Print – Offline (Google Play package `com.sudoku5.sudoku5_app`)
+- **Developer:** Osli software (Ahmed Bermo)
+- **Contact:** Ahmed Bermo, [ahmed.bermo@gmail.com](mailto:ahmed.bermo@gmail.com)
+
+This policy covers the Sudoku Large Print – Offline app, published on Google Play by Osli software (Ahmed Bermo).
 
 ## Summary
 
-Sudoku Book & Game – Offline ("the app", formerly "Sudoku – Play Like a Book") has no accounts and does not ask for your name, email address or phone number. All puzzles are built into the app, and your progress and settings stay on your device. The app has no server of its own. It shows a banner ad served by Google AdMob.
+Sudoku Large Print – Offline ("the app", formerly "Sudoku Book & Game – Offline" and "Sudoku – Play Like a Book"; its home-screen label is "Sudoku Book") has no accounts and does not ask for your name, email address or phone number. All puzzles are built into the app, and your progress and settings stay on your device. The app has no server of its own. It shows a banner ad served by Google AdMob.
 
 ## What stays on your device
 
@@ -61,4 +67,4 @@ If the app starts collecting different data, this policy will be updated first a
 
 ## Contact
 
-Questions about this policy: please open an issue at [github.com/ahmedbermo-ui/ahmedbermo-ui.github.io/issues](https://github.com/ahmedbermo-ui/ahmedbermo-ui.github.io/issues).
+Osli software (Ahmed Bermo) is responsible for the app and for this policy. Questions about this policy: email [ahmed.bermo@gmail.com](mailto:ahmed.bermo@gmail.com), or open an issue at [github.com/ahmedbermo-ui/ahmedbermo-ui.github.io/issues](https://github.com/ahmedbermo-ui/ahmedbermo-ui.github.io/issues).
